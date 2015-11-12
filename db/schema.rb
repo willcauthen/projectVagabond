@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151112202654) do
+ActiveRecord::Schema.define(version: 20151112233104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,8 +42,9 @@ ActiveRecord::Schema.define(version: 20151112202654) do
     t.string   "password_digest"
     t.string   "current_city"
     t.string   "about"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
+    t.string   "Img_File",        default: "defaultuserpic.png"
   end
 
   add_foreign_key "post_users", "posts"
