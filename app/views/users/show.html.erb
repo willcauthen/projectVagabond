@@ -3,5 +3,14 @@
 	Name: <%= @user.user_name %>
 	Current City: <%= @user.current_city %>
 	About: <%= @user.about %>
-
 </div>
+
+<% @posts.each do |post| %>
+	<% if @posts == nil %>
+		<%= "No posts to be found!" %>
+	<% end %>
+	<div>
+		<%= post.user %>
+	</div>
+<% end %>
+
