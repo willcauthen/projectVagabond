@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
 
 	has_many :posts
 
+  # for refactoring later
+  # has_secure_password
 
 	BCrypt::Engine.cost = 12
 	validates :user_name, presence: true, uniqueness: true 
