@@ -10,5 +10,8 @@ Rails.application.routes.draw do
   	resources :posts
   end
 
+  get "/sign-in", to: "sessions#new"
+  post "/sessions", to: "sessions#create"
+
 end
 

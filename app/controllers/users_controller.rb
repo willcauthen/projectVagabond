@@ -3,7 +3,11 @@ class UsersController < ApplicationController
 	end
 	def new
 	end
-	def create	
+	def create
+		user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
+    	@user = User.create(user_params)
+    	login(@user) # <-- login the user
+    	redirect_to "/users/#{@user.id}" # <-- go to show
 	end
 	def edit	
 	end
