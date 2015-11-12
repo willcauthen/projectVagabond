@@ -1,0 +1,12 @@
+<h1> This is the posts page</h1>
+
+
+
+<% @posts.each do |post| %>
+	<% if @posts == nil %>
+		<%= p "No users to be found! wtf?" %>
+	<% end %>
+	<div>
+		<%= post.user %>
+	</div>
+<% end %>
