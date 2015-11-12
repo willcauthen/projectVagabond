@@ -5,3 +5,13 @@
 	<%= button_to "Delete", user, method: :delete %>
 </div>
 <% end %>
+
+
+<% @posts.each do |post| %>
+	<% if @posts == nil %>
+		<%= p "No users to be found! wtf?" %>
+	<% end %>
+	<div>
+		<%= post.user %>
+	</div>
+<% end %>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   get "/posts", to: "posts#index" 
   
 end
@@ -57,9 +57,9 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-=======
-  root to: 'users#index'
-  resources :users do
-  end
-end
->>>>>>> b73ab54e69299b3b508b681e9fca792e304f0eb7
+
+#   root to: 'users#index'
+#   resources :users do
+#   end
+# end
+# >>>>>>> b73ab54e69299b3b508b681e9fca792e304f0eb7
