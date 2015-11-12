@@ -1,0 +1,7 @@
+<%= form_for @user do |f| %>
+	Username :<%= f.text_field :user_name %>
+	Email: <%= f.text_area :email %>
+	Current City: <%= f.text_area :current_city %>
+	About:	<%= f.text_area :about %>
+	<%= f.submit "Update User" %>
+<% end %>
