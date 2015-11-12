@@ -1,6 +1,5 @@
 #Group 1
 
-Laura B
-Uriel
-Will
-Chris
+Client: Brianna
+
+Laura B, Uriel, Will, Chris
