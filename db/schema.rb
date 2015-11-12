@@ -11,25 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20151112202654) do
-=======
+
 ActiveRecord::Schema.define(version: 20151112200418) do
->>>>>>> b73ab54e69299b3b508b681e9fca792e304f0eb7
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-<<<<<<< HEAD
-  create_table "post_users", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "post_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "post_users", ["post_id"], name: "index_post_users_on_post_id", using: :btree
-  add_index "post_users", ["user_id"], name: "index_post_users_on_user_id", using: :btree
 
   create_table "posts", force: :cascade do |t|
     t.string   "city"
@@ -41,8 +27,16 @@ ActiveRecord::Schema.define(version: 20151112200418) do
     t.datetime "updated_at", null: false
   end
 
-=======
->>>>>>> b73ab54e69299b3b508b681e9fca792e304f0eb7
+  create_table "post_users", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "post_users", ["post_id"], name: "index_post_users_on_post_id", using: :btree
+  add_index "post_users", ["user_id"], name: "index_post_users_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "user_name"
     t.string   "email"
@@ -53,9 +47,6 @@ ActiveRecord::Schema.define(version: 20151112200418) do
     t.datetime "updated_at",      null: false
   end
 
-<<<<<<< HEAD
   add_foreign_key "post_users", "posts"
   add_foreign_key "post_users", "users"
-=======
->>>>>>> b73ab54e69299b3b508b681e9fca792e304f0eb7
 end
