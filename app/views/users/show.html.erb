@@ -1,5 +1,7 @@
 <div class="text-center">
+	<%= image_tag ("<%= @user.Img_File %>"  :alt => "profile image") %>
 	Name: <%= @user.user_name %>
 	Current City: <%= @user.current_city %>
 	About: <%= @user.about %>
+
 </div>
