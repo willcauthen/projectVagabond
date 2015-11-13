@@ -4,12 +4,10 @@ class UsersController < ApplicationController
 		@posts = @user.post.all
 		render :index
 	end
-
 	def new
 		@user = User.new
 		render :new
 	end
-
 	def create	
 		user_params = params.require(:user).permit(:user_name, :email, :password, :current_city, :about)
 		@user = User.create(user_params)
