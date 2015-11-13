@@ -6,9 +6,9 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
-	def self.confirm(email_param, password_param)
-  		user = User.find_by_email(email_param)
-  		user.authenticate(password_param)
+	def self.confirm(params)
+  		@user = User.find_by({email: params[:email]})
+  		@user.authenticate(params[:password])
 	end
 
 end
