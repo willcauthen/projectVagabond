@@ -33,39 +33,39 @@ User.create(user_name: 'mojojoejoe',
 City.create(name: 'San Francisco, CA',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Cleveland, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Columbus, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Athens, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Toledo, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Akron, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'New York, NY',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Bahstun, MASS',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'London, UK',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 Post.create(city: 'San Fran',
 			title: 'Post1',
 			user_id: 1,
