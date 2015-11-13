@@ -30,3 +30,53 @@ User.create(user_name: 'mojojoejoe',
 			password_digest: 'joejoejoe',
 			current_city: 'New York',
 			about: 'Phil Collins understands me')
+City.create(name: 'San Francisco, CA',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Cleveland, OH',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Columbus, OH',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Athens, OH',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Toledo, OH',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Akron, OH',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'New York, NY',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'Bahstun, MASS',
+			lat: nil,
+			long: nil,
+			posts: nil)
+City.create(name: 'London, UK',
+			lat: nil,
+			long: nil,
+			posts: nil)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
