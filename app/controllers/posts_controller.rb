@@ -19,3 +19,4 @@ class PostsController < ApplicationController
 	def destory
 	end
 end
+
