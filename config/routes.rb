@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root to: 'users#index'
 
+  get "/sign-in", to: "sessions#new"
+  post "/sessions", to: "sessions#create"
+
   resources :users do
   	resources :posts
   end
@@ -23,9 +26,7 @@ Rails.application.routes.draw do
 # potentially unnecessary route
   # post "/posts/:post_id/users", to: "users#create", as: "post_users"
 
-  # get "/sign-in", to: "sessions#new"
-  # post "/sessions", to: "sessions#create"
-
+  
   # get "/users", to: "users#index", as: "users"
   # get "/posts", to: "posts#index", as: "posts"
 
