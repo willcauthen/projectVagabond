@@ -18,5 +18,5 @@ class CitiesController < ApplicationController
 	end
 	
 		
-	end
+	
 end
