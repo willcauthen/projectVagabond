@@ -66,7 +66,66 @@ City.create(name: 'London, UK',
 			lat: nil,
 			lng: nil,
 			posts: nil)
-
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 1,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 1,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 1,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 2,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 2,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 2,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 3,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 3,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 3,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 4,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 4,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 4,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 5,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 5,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 5,
+			content: 'blah blah blah3')
 
 
 
