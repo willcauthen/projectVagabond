@@ -1,10 +1,24 @@
+<h1 class="text-center">Vagabond contributors</h1>
 <% @users.each do |user| %>
-<div class="text-center">
-<%= image_tag user.Img_File  %>
-	Name: <%= user.user_name %> <br>
-	about: <%= user.about %>
-	<%= button_to "Delete", user, method: :delete %>
+
+<div class="container">
+	<div class="row">
+		<div col-md-3 col-md-offset-3>
+			<div class="well">
+				<div class="pull-left">
+				<%= image_tag user.Img_File  %>
+				</div>
+				<div class="text-center">
+					<h2> <%= user.user_name %> </h2>
+					Current city: <%= user.current_city %><br>
+					About: <%= user.about %><br><br>
+					<%= button_to "Delete", user, method: :delete %>
+				</div> 
+			</div>
+		</div>
+	</div>
 </div>
+
 <% end %>
 
 

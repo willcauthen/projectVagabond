@@ -1,11 +1,19 @@
-<div>
+<div class="text-center">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3"></div>
+<div class="well">
+<h2>Add a New User</h2>
 <%= form_for @user do |f| %>
 	
-	Username :<%= f.text_field :user_name %>
-	Email: <%= f.text_field :email %>
-	Password: <%= f.password_field :password %>
-	Current City: <%= f.text_field :current_city %>
-	About:	<%= f.text_area :about %>
+	Username :<%= f.text_field :user_name %><br>
+	Email: <%= f.text_field :email %><br>
+	Password: <%= f.password_field :password %><br>
+	Current City: <%= f.text_field :current_city %><br>
+	About:	<%= f.text_area :about %><br>
 	<%= f.submit "Save user" %>
 <% end %>
+</div>
+</div>
+</div>
 </div>
