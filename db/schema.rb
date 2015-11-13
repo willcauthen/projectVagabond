@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20151113015353) do
     t.string   "name"
     t.float    "lat"
     t.float    "lng"
-    t.string   "posts"
+    t.integer  "post_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20151113015353) do
   create_table "posts", force: :cascade do |t|
     t.string   "city"
     t.string   "title"
-    t.string   "user"
+    t.integer  "user_id"
     t.string   "content"
     t.datetime "date"
     t.datetime "created_at", null: false
