@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	def index
 		@users = User.all
-		@posts = @user.post.all
+		#@posts = @user.post.all
 		render :index
 	end
 	def new
@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 	end
 	def create	
 		user_params = params.require(:user).permit(:user_name, :email, :password, :current_city, :about)
-		@user = User.create(user_params)
+		@user = User.confirm(user_params)
 		login(@user)
 		redirect_to '/users/#{@user.id}'
 
