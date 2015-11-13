@@ -15,6 +15,8 @@ class UsersController < ApplicationController
 		login(@user)
 		redirect_to @user
 	end
+	# Uriel- I added this to make sure a user is logged in, we can take it out.
+	# before_action :logged_in?, only: [:show]
 	def edit
 		id = params[:id]
 		@user = User.find(id)
@@ -27,8 +29,6 @@ class UsersController < ApplicationController
 		@user.update_attributes(updated_info)
 		redirect_to @user
 	end
-	# Uriel- I added this to make sure a user is logged in, we can take it out.
-	before_action :logged_in?, only: [:show]
 	def show
 		@user = User.find(params[:id])
 		render :show
