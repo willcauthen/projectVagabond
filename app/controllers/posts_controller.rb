@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all
+		@user = User.find_by(id: 3)
 		render :index
 
 	end
 	def new 
-		@posts = Post.new
+		@post = Post.new
 		render :new
 	end
 	def create

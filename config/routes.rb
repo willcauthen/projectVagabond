@@ -9,14 +9,14 @@ Rails.application.routes.draw do
   resources :cities do
   	resources :posts
   end
-  resources :posts, except: [:new] do
+  resources :posts do
     resources :users, only: [:create]
   end
 
-  get "/posts/new", to: "posts#new", as: "new_post"
-  post "/posts", to: "posts#create"
+  # get "/posts/new", to: "posts#new", as: "new_post"
+  # post "/posts", to: "posts#create"
   
-  get "/users/:user_id/posts", to: "post_users#index"
+  # get "/users/:user_id/posts", to: "post_users#index"
   # , as: "user_posts"
   
 
