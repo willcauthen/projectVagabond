@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 # potentially unnecessary route
   # post "/posts/:post_id/users", to: "users#create", as: "post_users"
 
-  # get "/sign-in", to: "sessions#new"
+  get "/sign-in", to: "sessions#new"
   # post "/sessions", to: "sessions#create"
 
   # get "/users", to: "users#index", as: "users"
