@@ -1,0 +1,28 @@
+<h1> This is the post/index page</h1>
+
+<% @posts.each do |post| %>
+	<% if @posts.length == 0 %>
+		<%= p "No users to be found! wtf?" %>
+	<% end %>
+	<div>
+		<%= post.user %>
+	</div>
+<% end %>
+
+<!-- to be moved to sessions -->
+<div> <%= @user.user_name %> has the following posts:</div>
+
+<ul>
+	<% @posts.each do |pst| %>
+	<li> <%= pst.content %> </li>
+	<% end %>
+</ul>
+	<% @posts.each do |post| %>
+		<div>
+			<h2><%= post.user_name %></h2>
+			<% if @current_user %>
+			<%= button_to "follow", post_users_path(post) %>
+			<% end %>
+		</div>
+		<br>
+	<% end %>
