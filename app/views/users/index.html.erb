@@ -1,19 +1,14 @@
 <% @users.each do |user| %>
-<<<<<<< HEAD
 	<div class="text-center">
 		Name: <%= user.user_name %> <br>
 		about: <%= user.about %>
 		<%= button_to "Delete", user, method: :delete %>
 	</div>
-<% end %>
-=======
-<div class="text-center">
-<%= image_tag user.Img_File  %>
-	Name: <%= user.user_name %> <br>
-	about: <%= user.about %>
-	<%= button_to "Delete", user, method: :delete %>
-</div>
+	<div class="text-center">
+		<%= image_tag user.Img_File  %>
+		Name: <%= user.user_name %> <br>
+		about: <%= user.about %>
+		<%= button_to "Delete", user, method: :delete %>
+	</div>
 <% end %>
 
-
->>>>>>> 002e780755d03968fa58fd23549fa8567f213ec9
