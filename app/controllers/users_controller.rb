@@ -10,10 +10,10 @@ class UsersController < ApplicationController
 	end
 	def create	
 		user_params = params.require(:user).permit(:user_name, :email, :password, :current_city, :about)
-		@user = User.confirm(user_params)
+		@user = User.create(user_params)
+		p @user
 		login(@user)
-		redirect_to '/users/#{@user.id}'
-
+		redirect_to @user
 	end
 	def edit
 		id = params[:id]
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 		user = User.find(id)
 		updated_info = params.require(:user).permit(:user_name, :current_city, :about)
 		user.update_attributes(updated_info)
-		redirect_to '/users/#{id}'
+		redirect_to @user
 	end
 	def show
 		@user = User.find(params[:id])
