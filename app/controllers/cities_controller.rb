@@ -17,6 +17,4 @@ class CitiesController < ApplicationController
 		redirect_to "/cities"
 	end
 	
-		
-	end
 end
