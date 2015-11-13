@@ -22,9 +22,9 @@ class UsersController < ApplicationController
 	end
 	def update
 		id = params[:id]
-		user = User.find(id)
+		@user = User.find(id)
 		updated_info = params.require(:user).permit(:user_name, :current_city, :about)
-		user.update_attributes(updated_info)
+		@user.update_attributes(updated_info)
 		redirect_to @user
 	end
 	def show
@@ -33,8 +33,8 @@ class UsersController < ApplicationController
 	end
 	def destroy
 		id = params[:id]
-		user = User.find(id)
-		user.destroy
-		redirect_to '/users'
+		@user = User.find(id)
+		@user.destroy
+		redirect_to users_path
 	end
 end
