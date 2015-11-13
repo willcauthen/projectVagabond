@@ -2,8 +2,10 @@ server runs
 
 <% @users.each do |user| %>
 <div class="text-center">
+<%= image_tag user.Img_File  %>
 	Name: <%= user.user_name %> <br>
 	about: <%= user.about %>
 	<%= button_to "Delete", user, method: :delete %>
 </div>
 <% end %>
+
