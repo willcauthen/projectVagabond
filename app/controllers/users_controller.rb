@@ -27,6 +27,8 @@ class UsersController < ApplicationController
 		user.update_attributes(updated_info)
 		redirect_to '/users/#{id}'
 	end
+	# Uriel- I added this to make sure a user is logged in, we can take it out.
+	before_action :logged_in?, only: [:show]
 	def show
 		@user = User.find(params[:id])
 		render :show
