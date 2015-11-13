@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	def index
 		@users = User.all
-		@posts = @user.post.all
+		#@posts = @user.post.all
 		render :index
 	end
 	def new
