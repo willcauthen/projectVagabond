@@ -33,20 +33,20 @@ User.create(user_name: 'mojojoejoe',
 City.create(name: 'San Francisco, CA',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+			post_id: nil)
 City.create(name: 'Cleveland, OH',
 			lat: nil,
 			lng: nil,
-			posts: nil)
+
+			post_id: nil)
 City.create(name: 'New York, NY',
 			lat: nil,
 			lng: nil,
-			posts: nil)
-City.create(name: 'London, UK',
+			post_id: nil)
+City.create(name: 'Bahstun, MASS',
 			lat: nil,
 			lng: nil,
-			posts: nil)
-
+			post_id: nil)
 
 
 
