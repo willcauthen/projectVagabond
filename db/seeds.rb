@@ -37,8 +37,8 @@ City.create(name: 'San Francisco, CA',
 City.create(name: 'Cleveland, OH',
 			lat: nil,
 			lng: nil,
-
 			post_id: nil)
+
 City.create(name: 'New York, NY',
 			lat: nil,
 			lng: nil,
@@ -47,6 +47,71 @@ City.create(name: 'Bahstun, MASS',
 			lat: nil,
 			lng: nil,
 			post_id: nil)
+
+City.create(name: 'London, UK',
+			lat: nil,
+			lng: nil,
+			post_id: nil)
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 1,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 1,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 1,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 2,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 2,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 2,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 3,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 3,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 3,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 4,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 4,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 4,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 5,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 5,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 5,
+			content: 'blah blah blah3')
 
 
 
