@@ -38,27 +38,7 @@ City.create(name: 'Cleveland, OH',
 			lat: nil,
 			lng: nil,
 			posts: nil)
-City.create(name: 'Columbus, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Athens, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Toledo, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Akron, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
 City.create(name: 'New York, NY',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Bahstun, MASS',
 			lat: nil,
 			lng: nil,
 			posts: nil)
