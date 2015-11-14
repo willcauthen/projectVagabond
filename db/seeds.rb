@@ -32,26 +32,23 @@ User.create(user_name: 'mojojoejoe',
 			about: 'Phil Collins understands me')
 City.create(name: 'San Francisco, CA',
 			lat: nil,
-			lng: nil,
-			post_id: nil)
+			lng: nil)
 City.create(name: 'Cleveland, OH',
 			lat: nil,
-			lng: nil,
-			post_id: nil)
+			lng: nil)
 
 City.create(name: 'New York, NY',
 			lat: nil,
-			lng: nil,
-			post_id: nil)
+			lng: nil)
 City.create(name: 'Bahstun, MASS',
 			lat: nil,
-			lng: nil,
-			post_id: nil)
+			lng: nil)
 
 City.create(name: 'London, UK',
 			lat: nil,
-			lng: nil,
-			post_id: nil)
+			lng: nil)
+
+
 Post.create(city: 'San Fran',
 			title: 'Post1',
 			user_id: 1,
