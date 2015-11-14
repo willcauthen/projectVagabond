@@ -1,17 +1,20 @@
-<% @cities.each do |city| %>
-	<div>
-		<h3><%= city.name %></h3>
-	</div>
-	<br>
-
-<% end %>
-<!-- will most likely go into sessions view -->
+<div class="container">
+  <div class="row">
+    <br>
+  </div>
+  <div class="row">
+  
 <% @cities.each do |city| %>
   <div>
+  <div class="text-center well">
     <h3><%= city.name %></h3>
+    
     <% if @current_user %> 
       <%= button_to "Join", city_users_path(city) %>
     <% end %>
   </div>
   <br>
 <% end %>
+</div>
+</div>
+</div>
