@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all
-		@user = User.find_by(id: 3)
 		render :index
 
 	end
@@ -10,8 +9,8 @@ class PostsController < ApplicationController
 		render :new
 	end
 	def create
-		posts_params = params.require(:post).permit(:user_name, :current_city, :content)
-		@post = Post.create(post_params)
+		posts_params = params.require(:post).permit(:user_id, :current_city, :content, :title)
+		@post = Post.create(posts_params)
 		redirect_to "/posts"
 	end
 	def edit

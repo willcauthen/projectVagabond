@@ -51,74 +51,63 @@ City.create(name: 'London, UK',
 
 Post.create(city: 'San Fran',
 			title: 'Post1',
-			user_id: 1,
+			user: "1",
 			content: 'blah blah blah')
 Post.create(city: 'San Fran',
 			title: 'Post2',
-			user_id: 1,
+			user: "1",
 			content: 'blah blah blah2')
 Post.create(city: 'San Fran',
 			title: 'Post3',
-			user_id: 1,
+			user: "1",
 			content: 'blah blah blah3')
 Post.create(city: 'San Fran',
 			title: 'Post1',
-			user_id: 2,
+			user: "2",
 			content: 'blah blah blah')
 Post.create(city: 'San Fran',
 			title: 'Post2',
-			user_id: 2,
+			user: "2",
 			content: 'blah blah blah2')
 Post.create(city: 'San Fran',
 			title: 'Post3',
-			user_id: 2,
+			user: "2",
 			content: 'blah blah blah3')
 Post.create(city: 'San Fran',
 			title: 'Post1',
-			user_id: 3,
+			user: "3",
 			content: 'blah blah blah')
 Post.create(city: 'San Fran',
 			title: 'Post2',
-			user_id: 3,
+			user: "3",
 			content: 'blah blah blah2')
 Post.create(city: 'San Fran',
 			title: 'Post3',
-			user_id: 3,
+			user: "3",
 			content: 'blah blah blah3')
 Post.create(city: 'San Fran',
 			title: 'Post1',
-			user_id: 4,
+			user: "4",
 			content: 'blah blah blah')
 Post.create(city: 'San Fran',
 			title: 'Post2',
-			user_id: 4,
+			user: "4",
 			content: 'blah blah blah2')
 Post.create(city: 'San Fran',
 			title: 'Post3',
-			user_id: 4,
+			user: "4",
 			content: 'blah blah blah3')
 Post.create(city: 'San Fran',
 			title: 'Post1',
-			user_id: 5,
+			user: "5",
 			content: 'blah blah blah')
 Post.create(city: 'San Fran',
 			title: 'Post2',
-			user_id: 5,
+			user: "5",
 			content: 'blah blah blah2')
 Post.create(city: 'San Fran',
 			title: 'Post3',
-			user_id: 5,
+			user: "5",
 			content: 'blah blah blah3')
-
-
-
-
-
-
-
-
-
-
-
 
 
