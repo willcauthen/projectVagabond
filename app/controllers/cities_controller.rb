@@ -16,7 +16,14 @@ class CitiesController < ApplicationController
 
 		redirect_to "/cities"
 	end
+<<<<<<< HEAD
 	
 	
+=======
+	def show
+		p params
+		@city = City.find(params[:id])
+	end
+>>>>>>> master
 
 end

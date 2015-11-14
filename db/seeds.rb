@@ -32,41 +32,83 @@ User.create(user_name: 'mojojoejoe',
 			about: 'Phil Collins understands me')
 City.create(name: 'San Francisco, CA',
 			lat: nil,
-			lng: nil,
-			posts: nil)
+			lng: nil)
 City.create(name: 'Cleveland, OH',
 			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Columbus, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Athens, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Toledo, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
-City.create(name: 'Akron, OH',
-			lat: nil,
-			lng: nil,
-			posts: nil)
+			lng: nil)
+
 City.create(name: 'New York, NY',
 			lat: nil,
-			lng: nil,
-			posts: nil)
+			lng: nil)
 City.create(name: 'Bahstun, MASS',
 			lat: nil,
-			lng: nil,
-			posts: nil)
+			lng: nil)
+
 City.create(name: 'London, UK',
 			lat: nil,
-			lng: nil,
-			posts: nil)
+			lng: nil)
 
+
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 1,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 1,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 1,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 2,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 2,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 2,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 3,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 3,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 3,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 4,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 4,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 4,
+			content: 'blah blah blah3')
+Post.create(city: 'San Fran',
+			title: 'Post1',
+			user_id: 5,
+			content: 'blah blah blah')
+Post.create(city: 'San Fran',
+			title: 'Post2',
+			user_id: 5,
+			content: 'blah blah blah2')
+Post.create(city: 'San Fran',
+			title: 'Post3',
+			user_id: 5,
+			content: 'blah blah blah3')
 
 
 

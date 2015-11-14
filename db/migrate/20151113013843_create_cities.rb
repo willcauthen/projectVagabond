@@ -4,7 +4,7 @@ class CreateCities < ActiveRecord::Migration
       t.string :name
       t.float :lat
       t.float :lng
-      t.string :posts
+      t.integer :post_id
 
       t.timestamps null: false
     end

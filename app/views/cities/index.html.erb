@@ -1,14 +1,15 @@
-<% @cities.each do |city| %>
-	<div>
-		<h3><%= city.name %></h3>
-	</div>
-	<br>
-
-<% end %>
-<!-- will most likely go into sessions view -->
+<div class="container">
+  <div class="row">
+    <br>
+  </div>
+  <div class="row">
+  
 <% @cities.each do |city| %>
   <div>
-    <h3><%= city.name %></h3>
+  <div class="text-center well">
+  <h3><%= link_to  city.name, city_path(city.id) %></h3>
+    
+    
     <% if @current_user %> 
       <%= button_to "Join", city_users_path(city) %>
     <% end %>
@@ -16,4 +17,10 @@
   <br>
 <% end %>
 
+
 <%= draw_map_of City.new(41.436,-81.796) %>
+
+  </div>
+  </div>
+</div>
+
