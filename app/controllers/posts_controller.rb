@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 	def index
 		user = current_user
-		@posts = Post.where(user:user.id)
+		@posts = Post.all
 		render :index
 
 	end
@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 	def edit
 		id = params[:id]
 		@post = Post.find(id)
+		redirect_to "posts"
 	end
 	def update
 		id = params[:id]
@@ -27,8 +28,10 @@ class PostsController < ApplicationController
 	end
 	def show
 		id = params[:id]
-		var = User.find(id) || City.find(id)
+		var = User.find(id) || City.find(id) 
 		@post = Post.find(var)
+
+
 	end
 	def destory
 		id = params[:id]

@@ -1,21 +1,26 @@
 Rails.application.routes.draw do
 
   root to: 'cities#index'
+get "posts/:id", to: "posts#show", as: "post_show"
 
   get "/sign-in", to: "sessions#new"
   post "/sessions", to: "sessions#create"
 
   resources :users do
-  	resources :posts do 
+    resources :posts do 
     end
   end
 
   resources :cities do
-  	resources :posts do 
+    resources :posts do 
     end
   end
 
   resources :posts
+
+# get "/posts/:id/edit", to: "post#edit", as: "post_edit"
+
+
 
   # resources :posts do
   #   resources :users, only: [:create]

@@ -2,7 +2,7 @@ class CitiesController < ApplicationController
 
 	def index
 		@cities = City.all
-
+		@posts = Post.all
 		render :index
 	end
 
@@ -15,6 +15,10 @@ class CitiesController < ApplicationController
 		@city = City.create(city_params)
 
 		redirect_to "/cities"
+	end
+	def edit 
+		id = params[:id]
+		@post = Post.find(id)
 	end
 	def show
 		# p params

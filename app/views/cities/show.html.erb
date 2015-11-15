@@ -1,3 +1,4 @@
+<h1>This is the cities/show page!</h1>
 <div class="container">
 	<div class="row">
 		<br>
@@ -10,9 +11,11 @@
 		<li>
 			Post: <%= post.content %> <br>
 			Title: <%= post.title %> <br>
-			<%= post.user %><br>
-			<%= button_to "Edit", 'edit', method: :edit %>
-			<%= button_to "Delete", 'post#destroy', method: :destroy %>
+			User:<%= post.user %><br>
+			PostID: <%= post.id %>
+			<%= button_to "See full article", posts_path(post.id) %>
+			
+
 		</li>
 	<% end %>
 		</div>
