@@ -6,12 +6,17 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
 
   resources :users do
-  	resources :posts
+  	resources :posts do 
+    end
   end
 
   resources :cities do
-  	resources :posts
+  	resources :posts do 
+    end
   end
+
+  resources :posts
+
   # resources :posts do
   #   resources :users, only: [:create]
   # end

@@ -49,65 +49,65 @@ City.create(name: 'London, UK',
 			lng: nil)
 
 
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "1",
 			content: 'blah blah blah')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "1",
 			content: 'blah blah blah2')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "1",
 			content: 'blah blah blah3')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "2",
 			content: 'blah blah blah')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "2",
 			content: 'blah blah blah2')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "2",
 			content: 'blah blah blah3')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "3",
 			content: 'blah blah blah')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "3",
 			content: 'blah blah blah2')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "3",
 			content: 'blah blah blah3')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "4",
 			content: 'blah blah blah')
-Post.create(city: 'San Fran',
+Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "4",
-			content: 'blah blah blah2')
-Post.create(city: 'San Fran',
+			content: 'There are no more options')
+Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "4",
-			content: 'blah blah blah3')
-Post.create(city: 'San Fran',
+			content: 'I am special')
+Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "5",
-			content: 'blah blah blah')
-Post.create(city: 'San Fran',
+			content: 'I am one of a kind')
+Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "5",
-			content: 'blah blah blah2')
-Post.create(city: 'San Fran',
+			content: 'I am a snowflake')
+Post.create(city: 'Messo Potamia, CA',
 			title: 'Post3',
 			user: "5",
-			content: 'blah blah blah3')
+			content: 'I am unique')
 
 

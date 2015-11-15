@@ -15,13 +15,26 @@ class PostsController < ApplicationController
 		redirect_to "/posts"
 	end
 	def edit
+		id = params[:id]
+		@post = Post.find(id)
+	end
+	def update
+		id = params[:id]
+		@post = Post.find(id)
+		updated_info = params.require(:post).permit(:title, :content)
+		@post.update_attributes(updated_info)
+		redirect_to @post
 	end
 	def show
 		id = params[:id]
-		user = User.find_by(id)
-		@post = Post.find(user)
+		var = User.find(id) || City.find(id)
+		@post = Post.find(var)
 	end
 	def destory
+		id = params[:id]
+		@post = Post.find(id)
+		@post.destroy
+		redirect_to cities_path
 	end
 end
 

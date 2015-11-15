@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+			<br>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">	
+			<div class="text-center well">
+			<h1>Edit Post</h1>
+			
+			<%= form_for @post do |f| %>
+
+				Title: <%= f.text_field :title %><br>
+				About:	<%= f.text_area :content %><br>
+				<%= f.submit "Update Post" %>
+			<% end %>
+
+			</div>
+		</div>	
+	</div>
+</div>
