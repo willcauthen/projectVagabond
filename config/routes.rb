@@ -6,27 +6,32 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
 
   resources :users do
-  	resources :posts
+  	resources :posts do 
+    end
   end
 
   resources :cities do
-  	resources :posts
+  	resources :posts do 
+    end
   end
-  resources :posts do
-    resources :users, only: [:create]
-  end
+
+  resources :posts
+
+  # resources :posts do
+  #   resources :users, only: [:create]
+  # end
 
   # get "/posts/new", to: "posts#new", as: "new_post"
   # post "/posts", to: "posts#create"
   
-  # get "/users/:user_id/posts", to: "post_users#index"
+  # get "/users/:user_id/posts", to: "post#show"
   # , as: "user_posts"
   
 
 # potentially unnecessary route
   # post "/posts/:post_id/users", to: "users#create", as: "post_users"
 
-  get "/sign-in", to: "sessions#new"
+  # get "/sign-in", to: "sessions#new"
   # post "/sessions", to: "sessions#create"
 
   # get "/users", to: "users#index", as: "users"

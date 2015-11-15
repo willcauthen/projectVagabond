@@ -4,12 +4,20 @@
 	</div>
 	<div class="row">
 		<div class="text-center well">
-		<%= link_to "image_tag @user.Img_File" user_path %>
+		<%= link_to "image_tag @user.Img_File" %>
 		<br>
 				<h2> <%= @user.user_name %></h2>
 			Current City: <%= @user.current_city %><br>
-			About: <%= @user.about %>
+			About: <%= @user.about %> <br>
+			Created: <%= @user.created_at %>
 		</div>
+		<% @posts.each do |post| %>
+		<li>
+			Post: <%= post.content %> <br>
+			Title: <%= post.title %> <br>
+			<%= post.user %>
+		</li>
+	<% end %>
 	</div>
 </div>
 

@@ -21,8 +21,10 @@ class CitiesController < ApplicationController
 	
 =======
 	def show
-		p params
+		# p params
+
 		@city = City.find(params[:id])
+		@posts = Post.where(city: @city.name)
 	end
 >>>>>>> master
 
