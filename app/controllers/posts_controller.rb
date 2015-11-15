@@ -3,7 +3,6 @@ class PostsController < ApplicationController
 		user = current_user
 		@posts = Post.where(user:user.id)
 		render :index
-
 	end
 	def new 
 		@post = Post.new
