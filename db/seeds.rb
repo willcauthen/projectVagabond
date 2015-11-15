@@ -7,27 +7,27 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create(user_name: 'Chris',
 			email: 'chris@chris.com',
-			password_digest: 'christopher',
+			password: 'christopher',
 			current_city: 'San Francisco',
 			about: 'For Gondor!')
 User.create(user_name: 'Will',
 			email: 'will@will.com',
-			password_digest: 'william',
+			password: 'william',
 			current_city: 'Sonoma',
 			about: 'I love turtles!')
 User.create(user_name: 'Uriel',
 			email: 'uriel@uriel.com',
-			password_digest: 'tannedalbino',
+			password: 'tannedalbino',
 			current_city: 'Menlo Park',
 			about: 'Menlo Park is awesome')
 User.create(user_name: 'Laura',
 			email: 'laura@laura.com',
-			password_digest: 'laurab',
+			password: 'laurab',
 			current_city: 'Palo Alto',
 			about: 'Im Laura B!')
 User.create(user_name: 'mojojoejoe',
 			email: 'joe@joe.com',
-			password_digest: 'joejoejoe',
+			password: 'joejoejoe',
 			current_city: 'New York',
 			about: 'Phil Collins understands me')
 City.create(name: 'San Francisco, CA',
