@@ -9,9 +9,10 @@ class PostsController < ApplicationController
 		render :new
 	end
 	def create
+		id = params[:user_id]
 		posts_params = params.require(:post).permit(:user, :current_city, :content, :title)
 		@post = Post.create(posts_params)
-		redirect_to "/users/:id/posts"
+		redirect_to user_posts
 	end
 	def edit
 		id = params[:id]

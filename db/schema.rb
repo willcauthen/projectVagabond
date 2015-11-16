@@ -73,19 +73,6 @@ ActiveRecord::Schema.define(version: 20151116182246) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "regions", force: :cascade do |t|
-    t.string   "regionable_type"
-    t.integer  "regionable_id"
-    t.string   "title"
-    t.text     "content"
-    t.text     "snippets"
-    t.datetime "updated_at"
-    t.datetime "created_at"
-  end
-
-  add_index "regions", ["regionable_id"], name: "index_regions_on_regionable_id", using: :btree
-  add_index "regions", ["regionable_type", "regionable_id"], name: "index_regions_on_regionable_type_and_regionable_id", using: :btree
-
   create_table "users", force: :cascade do |t|
     t.string   "user_name"
     t.string   "email"
