@@ -24,7 +24,8 @@
       <li class="navbar-brand bz"><%= link_to "LOGIN", sign_in_path %> </li>
       <% end %>
       <% if @user %>
-      <li class="navbar-brand bz"><%= link_to "LOGOUT", sign_in_path %></li>
+      <li class="navbar-brand bz">LOGOUT</li>
+      <% @user == nil %>
       <% end %>
             </ul>
         </div>
