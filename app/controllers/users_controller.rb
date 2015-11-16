@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
-	before_action :logged_in?, only: [:show]
+	# before_action :logged_in?, only: [:show]
 	
 	def index
 		@users = User.all
-		#@posts = @user.post.all
 		render :index
 	end
 	def new
@@ -41,6 +40,5 @@ class UsersController < ApplicationController
 		@user = User.find(id)
 		@user.destroy
 		redirect_to users_path
-		# render "cities"
 	end
 end
