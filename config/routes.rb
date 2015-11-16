@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get "/sign-in", to: "sessions#new"
   post "/sessions", to: "sessions#create"
 
+  delete 'logout' => 'sessions#destroy'
+  
+
   resources :users do
     resources :posts do 
     end
@@ -19,6 +22,8 @@ Rails.application.routes.draw do
   resources :posts do
     resources :cities
   end
+
+
 
 
 # get "/posts/:id/edit", to: "post#edit", as: "post_edit"
