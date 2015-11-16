@@ -16,7 +16,8 @@ class PostsController < ApplicationController
 	def edit
 		id = params[:id]
 		@post = Post.find(id)
-		redirect_to "posts"
+		# redirect_to ""
+		render :edit
 	end
 	def update
 		id = params[:id]

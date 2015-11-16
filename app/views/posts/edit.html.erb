@@ -13,6 +13,7 @@
 
 				Title: <%= f.text_field :title %><br>
 				About:	<%= f.text_area :content %><br>
+				<%= button_to "Blow this fucker away", post, method: :destroy %>
 				<%= f.submit "Update Post" %>
 			<% end %>
 
