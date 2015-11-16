@@ -34,15 +34,18 @@ class PostsController < ApplicationController
 		redirect_to city_post_path
 	end
 	def show
+
 		id = params[:id] 
 		@post = Post.find(id)
 		@city = City.find_by(name:@post.city)
+
 	end
-	def destory
+	def destroy
 		id = params[:id]
 		@post = Post.find(id)
 		@post.destroy
-		redirect_to cities_path
+		redirect_to(cities_path)
+
 	end
 end
 

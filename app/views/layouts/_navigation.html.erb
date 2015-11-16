@@ -19,13 +19,12 @@
       <li class="navbar-brand bz"><%= link_to "TRAVEL TIPS", "/users/:id/posts" %> </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <% if !@user %>
+      <% if !@current_user %>
       <li class="navbar-brand bz"><%= link_to "SIGN UP", '/users/new' %> </li>
       <li class="navbar-brand bz"><%= link_to "LOGIN", sign_in_path %> </li>
-      <% end %>
-      <% if @user %>
-      <li class="navbar-brand bz">LOGOUT</li>
-      <% @user == nil %>
+      <% else %>
+      <li class="navbar-brand bz"> <%= link_to "LOGOUT", logout_path, method: :delete %> </li>
+
       <% end %>
             </ul>
         </div>
