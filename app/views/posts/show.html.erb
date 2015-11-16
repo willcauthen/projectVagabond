@@ -5,4 +5,4 @@ Content: <%= @post.content %> <br>
 PostID: <%= @post.id %> <br>
 <!-- if user doesn't have permission, these should be deactivated, 
 	once it's working, I mean -->
-<%= button_to "EDIT", @post, method: :edit %> <br>
+<%= button_to "EDIT", edit_post_path, method: :get %> <br>
