@@ -1,4 +1,3 @@
-<h1>This is the Users index page!</h1>
 <h1 class="text-center">Vagabond contributors</h1>
 
 <% @users.each do |user| %>
@@ -11,7 +10,7 @@
 				<%= image_tag user.Img_File  %>
 				</div>
 				<div class="text-center">
-					<h2> <%= user.user_name %> </h2>
+					<h2> <%= link_to user.user_name, user, method: :get %> </h2>
 					Current city: <%= user.current_city %><br>
 					About: <%= user.about %><br><br>
 					<%= button_to "Delete", user, method: :delete %>
