@@ -8,12 +8,6 @@ class PostsController < ApplicationController
 		@post = Post.new
 		render :new
 	end
-	def destroy
-		id = params[:id]
-		@post = Post.find(id)
-		@post.destroy
-		redirect_to method: :get
-	end
 	def create
 		posts_params = params.require(:post).permit(:user, :current_city, :content, :title)
 		@post = Post.create(posts_params)
@@ -36,6 +30,13 @@ class PostsController < ApplicationController
 		id = params[:id]
 		var = Post.find(id) || City.find(id) 
 		@post = Post.find(var)
+	end
+	def destroy
+		id = params[:id]
+		@post = Post.find(id)
+		@post.destroy
+		redirect_to(cities_path)
+
 	end
 end
 
