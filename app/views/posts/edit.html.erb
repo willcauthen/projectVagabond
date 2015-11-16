@@ -9,7 +9,7 @@
 			<div class="text-center well">
 			<h1>Edit Post</h1>
 			
-			<%= form_for @post do |f| %>
+			<%= form_for(@post, url: city_post_path, action: :update) do |f| %>
 
 				Title <br>
 				<%= f.text_field :title %><br>

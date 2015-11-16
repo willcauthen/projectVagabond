@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
 	def index
-		id = params[:user_id]
-		@user = User.find(id)
-		@posts = Post.where(user:@user.id)
+		id = params[:id]
+		@city = City.find_by(id)
+		@posts = Post.where(city:@city.name)
+
 		render :index
 	end
 	def new 
@@ -27,7 +28,7 @@ class PostsController < ApplicationController
 		@post = Post.find(id)
 		updated_info = params.require(:post).permit(:title, :content)
 		@post.update_attributes(updated_info)
-		redirect_to @post
+		redirect_to city_post_path
 	end
 	def show
 		id = params[:id]
