@@ -7,8 +7,7 @@ class CitiesController < ApplicationController
 	end
 
 	def new
-		@city = City.new
-		render :new
+		redirect_to cities_path
 	end
 	def create
 		city_params = params.require(:city).permit(:name, :lat, :lng)

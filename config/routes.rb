@@ -17,8 +17,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :posts do 
-  end
+
 
 # get "/posts/:id/edit", to: "post#edit", as: "post_edit"
 
