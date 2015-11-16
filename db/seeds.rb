@@ -40,7 +40,7 @@ City.create(name: 'Cleveland, OH',
 City.create(name: 'New York, NY',
 			lat: 40.689,
 			lng: -74.046)
-City.create(name: 'Bahstun, MASS',
+City.create(name: 'Boston, MA',
 			lat: 42.346,
 			lng: -71.099)
 
