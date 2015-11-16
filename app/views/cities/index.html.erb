@@ -7,7 +7,9 @@
 <% @cities.each do |city| %>
   <div>
   <div class="text-center well">
-  <h3><%= link_to  city.name, city_path(city.id) %></h3>
+  <h3><%= link_to  city.name, city_path(city.id) %> <br>
+  <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
+  </h3>
     
     
     <% if @current_user %> 
@@ -18,7 +20,7 @@
 <% end %>
 
 
-<%= draw_map_of City.new(41.436,-81.796) %>
+
 
   </div>
   </div>
