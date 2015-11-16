@@ -11,12 +11,15 @@ class PostsController < ApplicationController
 		render :new
 	end
 	def create
-		id = params[:user_id]
-		posts_params = params.require(:post).permit(:city, :content, :title)
+		id = params[:city_id]
+		city = City.find(id)
+		user = current_user
+		posts_params = params.require(:post).permit(:content, :title)
 		@post = Post.new(posts_params)
-		@post.user = id
+		@post.user = user.id
+		@post.city = city.name
 		@post.save
-		redirect_to user_posts_path
+		redirect_to city_posts_path
 	end
 	def edit
 		id = params[:id]
