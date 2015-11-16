@@ -35,6 +35,7 @@ City.create(name: 'San Francisco, CA',
 			lng: -122.403,
 			CityImg: 'SanFrancisco')
 City.create(name: 'Cleveland, OH',
+
 			lat: 41.494,
 			lng: -81.845,
 			CityImg: 'Cleveland')
