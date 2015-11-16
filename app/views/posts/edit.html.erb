@@ -8,14 +8,15 @@
 		<div class="col-md-4">	
 			<div class="text-center well">
 			<h1>Edit Post</h1>
+				<%= button_to "Blow this fucker away", @post.destroy, method: :destroy %>
 			
 			<%= form_for @post do |f| %>
 
 				Title: <%= f.text_field :title %><br>
 				About:	<%= f.text_area :content %><br>
-				<%= button_to "Blow this fucker away", post, method: :destroy %>
 				<%= f.submit "Update Post" %>
 			<% end %>
+
 
 			</div>
 		</div>	

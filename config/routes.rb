@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'cities#index'
-get "posts/:id", to: "posts#show", as: "post_show"
+  get "posts/:id", to: "posts#show", as: "post_show"
 
   get "/sign-in", to: "sessions#new"
   post "/sessions", to: "sessions#create"
@@ -16,7 +16,10 @@ get "posts/:id", to: "posts#show", as: "post_show"
     end
   end
 
-  resources :posts
+  resources :posts do
+    resources :cities
+  end
+
 
 # get "/posts/:id/edit", to: "post#edit", as: "post_edit"
 

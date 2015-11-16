@@ -41,5 +41,6 @@ class UsersController < ApplicationController
 		@user = User.find(id)
 		@user.destroy
 		redirect_to users_path
+		# render "cities"
 	end
 end
