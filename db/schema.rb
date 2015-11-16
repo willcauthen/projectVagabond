@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151116182246) do
+ActiveRecord::Schema.define(version: 20151116220539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20151116182246) do
     t.string   "posts"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "CityImg"
   end
 
   create_table "city_posts", force: :cascade do |t|
@@ -72,19 +73,6 @@ ActiveRecord::Schema.define(version: 20151116182246) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  create_table "regions", force: :cascade do |t|
-    t.string   "regionable_type"
-    t.integer  "regionable_id"
-    t.string   "title"
-    t.text     "content"
-    t.text     "snippets"
-    t.datetime "updated_at"
-    t.datetime "created_at"
-  end
-
-  add_index "regions", ["regionable_id"], name: "index_regions_on_regionable_id", using: :btree
-  add_index "regions", ["regionable_type", "regionable_id"], name: "index_regions_on_regionable_type_and_regionable_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "user_name"
