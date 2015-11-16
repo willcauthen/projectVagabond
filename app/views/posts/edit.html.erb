@@ -11,8 +11,10 @@
 			
 			<%= form_for @post do |f| %>
 
-				Title: <%= f.text_field :title %><br>
-				Write your post here:	<%= f.text_area :content %><br>
+				Title <br>
+				<%= f.text_field :title %><br>
+				Write your post here<br>
+				<%= f.text_area :content %><br>
 				<%= f.submit "Update Post" %>
 			<% end %>
 
