@@ -6,11 +6,10 @@
   
 <% @cities.each do |city| %>
   <div>
-  <div class="text-center well">
-  <h3><%= link_to  city.name, city_path(city.id) %> <br>
+  <div class="well text-center <%=city.CityImg %>">
+   
   <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
-  </h3>
-    
+  <h3><%= link_to  city.name, city_path(city.id) %></h3>
     
     <% if @current_user %> 
       <%= button_to "Join", city_users_path(city) %>

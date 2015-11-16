@@ -32,21 +32,26 @@ User.create(user_name: 'mojojoejoe',
 			about: 'Phil Collins understands me')
 City.create(name: 'San Francisco, CA',
 			lat: 37.790,
-			lng: -122.403)
+			lng: -122.403,
+			CityImg: 'SanFrancisco')
 City.create(name: 'Cleveland, OH',
 			lat: 41.494,
-			lng: -81.845)
+			lng: -81.845,
+			CityImg: 'Cleveland')
 
 City.create(name: 'New York, NY',
 			lat: 40.689,
-			lng: -74.046)
-City.create(name: 'Bahstun, MASS',
+			lng: -74.046,
+			CityImg: 'NewYork')
+City.create(name: 'Boston, MA',
 			lat: 42.346,
-			lng: -71.099)
+			lng: -71.099,
+			CityImg: 'Boston')
 
 City.create(name: 'London, UK',
 			lat: 51.501,
-			lng: -0.144)
+			lng: -0.144,
+			CityImg: 'London')
 
 
 Post.create(city: 'San Francisco, CA',
