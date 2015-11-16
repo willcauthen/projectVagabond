@@ -1,7 +1,10 @@
 class PostsController < ApplicationController
 	def index
-		user = current_user
-		@posts = Post.all
+		@current_user = current_user
+		id = params[:id]
+		@city = City.find_by(id)
+		@posts = Post.where(city:@city.name)
+
 		render :index
 	end
 	def new 
@@ -9,27 +12,39 @@ class PostsController < ApplicationController
 		render :new
 	end
 	def create
-		posts_params = params.require(:post).permit(:user, :current_city, :content, :title)
-		@post = Post.create(posts_params)
-		redirect_to "/users/:id/posts"
+		id = params[:city_id]
+		city = City.find(id)
+		user = current_user
+		posts_params = params.require(:post).permit(:content, :title)
+		@post = Post.new(posts_params)
+		@post.user = user.id
+		@post.city = city.name
+		@post.save
+		redirect_to city_posts_path
 	end
 	def edit
+		@current_user = current_user
 		id = params[:id]
 		@post = Post.find(id)
-		# redirect_to ""
-		render :edit
+		if @current_user.id.to_s == @post.user
+			render :edit
+		else
+			redirect_to cities_path
+		end
 	end
 	def update
 		id = params[:id]
 		@post = Post.find(id)
 		updated_info = params.require(:post).permit(:title, :content)
 		@post.update_attributes(updated_info)
-		redirect_to @post
+		redirect_to city_post_path
 	end
 	def show
-		id = params[:id]
-		var = Post.find(id) || City.find(id) 
-		@post = Post.find(var)
+		@current_user = current_user
+		id = params[:id] 
+		@post = Post.find(id)
+		@city = City.find_by(name:@post.city)
+
 	end
 	def destroy
 		id = params[:id]

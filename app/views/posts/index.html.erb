@@ -12,9 +12,9 @@
 				<div class="media">
 				<% @posts.each do |post| %>
 						<div class="well media-left">
-							<h3 class="media-heading"><%= link_to post.title, post, method: :get  %></h3> 
+							<h3 class="media-heading"><%= link_to post.title, "posts/#{post.id}"  %></h3> 
 							<div class="media-body"><%= post.content %> </div>
-								<strong>Author:</strong> <%= link_to post.user, user_path(post.user) %> 
+								<strong>Author:</strong><%= link_to post.user, "/users/#{post.user}/posts" %> 
 								<strong>Post created:</strong> <%= post.created_at %>
 								<% if post.updated_at == true %>
 									<strong>Edited at</strong> <%= post.updated_at %>
