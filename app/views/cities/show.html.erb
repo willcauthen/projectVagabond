@@ -14,9 +14,9 @@
 			
 			 <h3><%= post.title %> </h3>
 			<p>Post: <%= post.content %> </p>
-			written by user <%= link_to post.user, user_path %> PostID: <%= post.id %>
+			written by user <%= link_to post.user, "/users/#{post.user}" %> PostID: <%= post.id %>
 			
-			<%= button_to "See full article", post, method: :get %>
+			<%= link_to "See full article", "#{@city.id}/posts/#{post.id}" %>
 			
 
 		

@@ -14,7 +14,7 @@
 		<br>
 		<% @posts.each do |post| %>
 		<div class=" well media-left">
-			<h3 class="media-heading"><%= link_to post.title, post, method: :get  %></h3> 
+			<h3 class="media-heading"><%= link_to post.title, "/users/#{@user.id}/posts/#{post.id}" %></h3> 
 			<div class="media-body"><%= post.content %> </div>
 			
 			Post created: <%= post.created_at %>
