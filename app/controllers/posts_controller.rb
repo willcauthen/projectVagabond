@@ -30,8 +30,6 @@ class PostsController < ApplicationController
 		id = params[:id]
 		var = User.find(id) || City.find(id) 
 		@post = Post.find(var)
-
-
 	end
 	def destory
 		id = params[:id]

@@ -13,7 +13,7 @@
 			Title: <%= post.title %> <br>
 			User:<%= post.user %><br>
 			PostID: <%= post.id %>
-			<%= button_to "See full article", posts_path(post.id) %>
+			<%= button_to "See full article", post, method: :get %>
 			
 
 		</li>
