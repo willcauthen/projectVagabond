@@ -1,4 +1,4 @@
-<h1> This is the post/index page</h1>
+ <h1> This is the post/index page</h1>
 
 <% if @posts.length == 0 %>
 	<h2> <%= "No users to be found! wtf?" %> </h2>
@@ -8,7 +8,8 @@
 		<li>
 			Post: <%= post.content %> <br>
 			Title: <%= post.title %> <br>
-			<%= post.user %>
+			Post id: <%= post.id %> <br>
+			User: <%= post.user %>
 		</li>
 	<% end %>
 </ol>
