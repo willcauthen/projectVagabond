@@ -3,15 +3,18 @@
     <br>
   </div>
   <div class="row">
-  
-  <% @cities.each do |city| %>
   <div>
-  <div class="text-center well">
-  <h3><%= link_to  city.name, city_path(city.id) %> <br>
+
+  <% @cities.each do |city| %>
+
+  <div>
+
+  <div class="well text-center <%=city.CityImg %>">
+   
   <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
-  </h3>
-    
-  
+
+  <h3><%= link_to  city.name, city_path(city.id) %></h3>
+
   </div>
   <br>
   <% end %>
