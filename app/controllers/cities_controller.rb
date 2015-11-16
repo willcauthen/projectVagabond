@@ -16,14 +16,17 @@ class CitiesController < ApplicationController
 
 		redirect_to "/cities"
 	end
+
 	def edit 
 		id = params[:id]
 		@post = Post.find(id)
 	end
+
 	def show
 
 		@city = City.find(params[:id])
 		@posts = Post.where(city: @city.name)
 	end
+
 
 end

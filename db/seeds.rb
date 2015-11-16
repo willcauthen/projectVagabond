@@ -31,22 +31,22 @@ User.create(user_name: 'mojojoejoe',
 			current_city: 'New York',
 			about: 'Phil Collins understands me')
 City.create(name: 'San Francisco, CA',
-			lat: nil,
-			lng: nil)
+			lat: 37.790,
+			lng: -122.403)
 City.create(name: 'Cleveland, OH',
-			lat: nil,
-			lng: nil)
+			lat: 41.494,
+			lng: -81.845)
 
 City.create(name: 'New York, NY',
-			lat: nil,
-			lng: nil)
+			lat: 40.689,
+			lng: -74.046)
 City.create(name: 'Bahstun, MASS',
-			lat: nil,
-			lng: nil)
+			lat: 42.346,
+			lng: -71.099)
 
 City.create(name: 'London, UK',
-			lat: nil,
-			lng: nil)
+			lat: 51.501,
+			lng: -0.144)
 
 
 Post.create(city: 'San Francisco, CA',

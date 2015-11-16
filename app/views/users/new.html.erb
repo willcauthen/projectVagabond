@@ -9,11 +9,11 @@
 
 			<%= form_for @user do |f| %>
 				
-				Username :<%= f.text_field :user_name %><br>
-				Email: <%= f.text_field :email %><br>
-				Password: <%= f.password_field :password %><br>
-				Current City: <%= f.text_field :current_city %><br>
-				About:	<%= f.text_area :about %><br>
+				<%= f.text_field :user_name, placeholder: "Username" %> <br>
+				<%= f.text_field :email, placeholder: "Email" %><br>
+				<%= f.password_field :password, placeholder: "Password" %><br>
+				<%= f.text_field :current_city, placeholder: "Current City" %><br>
+				<%= f.text_area :about, placeholder: "About" %><br>
 				<%= f.submit "Save user" %>
 			<% end %>
 			</div>

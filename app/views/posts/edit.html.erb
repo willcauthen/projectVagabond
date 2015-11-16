@@ -10,20 +10,14 @@
 			<h1>Edit Post</h1>
 			
 			<%= form_for @post do |f| %>
-
-				Title: <%= f.text_field :title %><br>
-				About:	<%= f.text_area :content %><br>
+				Title <br>
+				<%= f.text_field :title %><br>
+				Write your post here<br>
+				<%= f.text_area :content %><br>
 				<%= f.submit "Update Post" %>
-
-
 				<%= button_to "Delete", {action: "destroy", id: @post.id },
 							method: :delete, data: {confirm: "Do you think the world will be a better place without this post?"} %>
-
-
-
 			<% end %>
-
-
 			</div>
 		</div>	
 	</div>
