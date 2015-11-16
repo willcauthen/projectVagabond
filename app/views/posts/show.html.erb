@@ -4,10 +4,10 @@
 <h3><%= @post.title %> </h3>
 <hr>
 <p><%= @post.content %> </p>
-written by user <%= link_to @post.user, user_path %> PostID: <%= @post.id %>
+written by user <%= link_to @post.user, "/users/#{@post.user}" %> PostID: <%= @post.id %>
 <!-- if user doesn't have permission, these should be deactivated, 
 	once it's working, I mean -->
-<%= button_to "EDIT", edit_city_post_path, method: :get %> <br>
+<%= button_to "EDIT", "/cities/#{@city.id}/posts/#{@post.id}/edit", method: :get %> <br>
 </div>
 </div>
 </div>
