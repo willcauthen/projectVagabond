@@ -1,2 +1,8 @@
-this is the posts/show page <br>
-<%= @post.content %>
+<h1>this is the posts/show page</h1> <br>
+Title: <%= @post.title %> <br>
+User: <%= @post.user %> <br>
+Content: <%= @post.content %> <br>
+PostID: <%= @post.id %> <br>
+<!-- if user doesn't have permission, these should be deactivated, 
+	once it's working, I mean -->
+<%= button_to "EDIT", @post, method: :edit %> <br>
