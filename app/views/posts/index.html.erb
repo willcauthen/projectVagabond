@@ -1,16 +1,24 @@
- <h1> This is the post/index page</h1>
 
-<% if @posts.length == 0 %>
-	<h2> <%= "No users to be found! wtf?" %> </h2>
-<% else %>
-<ol>
-	<% @posts.each do |post| %>
-		<li>
-			Post: <%= post.content %> <br>
-			Title: <%= post.title %> <br>
-			Post id: <%= post.id %> <br>
-			User: <%= post.user %>
-		</li>
-	<% end %>
-</ol>
-<% end %>
+<div class="container">
+	
+		<h2 class="text-center">All Travel Tips</h2>
+		<div class="row">
+			<div col-md-4>
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<% if @posts.length == 0 %>
+					<h2> <%= "No Posts here" %> </h2>
+				<% else %>
+				<div class="media">
+				<% @posts.each do |post| %>
+						<div class="well media-left">
+							<h3 class="media-heading"><%= link_to post.title, post, method: :get  %></h3> 
+							<div class="media-body"><%= post.content %> </div>
+								<strong>Author:</strong> <%= link_to post.user, user_path(post.user) %> 
+								<strong>Post created:</strong> <%= post.created_at %>
+								<% if post.updated_at == true %>
+									<strong>Edited at</strong> <%= post.updated_at %>
+								<% end %>
+							</div>
+					<% end %>
+					<% end %>
