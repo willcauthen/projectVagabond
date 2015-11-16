@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .well {
-	width: 60%;
-	margin-left: 20%;
-	background-color: rgba(125, 232, 227, .5);
+	width: 80%;
+	margin-left: 10%;
+	background-color: rgba(125, 232, 227, .9);
 	border-radius: 20px;
 }
 
@@ -16,15 +16,14 @@ img {
 
 .jumbotron {
     position: relative;
-    background: #000 url("splashpage.png") center center;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    background: #000;
     overflow: hidden;
     color: white;
+    padding-top: 75px;
 }
 
 .navbar {
+	background: #000;
 	padding-bottom: 15px;
 	padding-top: -15px;
 }
@@ -61,4 +60,7 @@ input.focus,
 }
 .Boston{
 	background: #000 url("Boston.png") center center;
+}
+.splashpage{
+	background: #000 url("splashpage.png") center center;
 }
