@@ -3,10 +3,10 @@
     <%= f.text_field :name, placeholder: "Name" %>
   </div>
   <div>
-    <%= f.lat_field :lat_field, placeholder: "Latitude" %>
+    <%= f.number_field :lat, placeholder: "Latitude" %>
   </div>
   <div>
-    <%= f.lng_field :lng_field, placeholder: "Longitude" %>
+    <%= f.number_field :lng, placeholder: "Longitude" %>
   </div>
   <%= f.submit %>
 <% end %>

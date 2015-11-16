@@ -1,8 +1,20 @@
-<%= form_for @post do |f| %>
-	
-	<!-- username & city should be prepopulated by session -->
-	Username :<%= f.text_field :user %>
-	
-	Post Content:	<%= f.text_area :content %>
-	<%= f.submit "Save post" %>
-<% end %>
+<div class="container">
+	<div class="text-center">
+		<h2>Add a New Post</h2>
+		<div class="row">
+			<div col-md-4>
+			</div>
+			<div class="col-md-4 col-md-offset-4 well">
+				<%= form_for @post do |f| %>
+					
+					<!-- username & city should be prepopulated by session -->
+					<%= f.text_field :title, placeholder: "Post Title" %>
+					<br>
+					<%= f.text_area :content, placeholder: "Post Content" %>
+					<br>
+					<%= f.submit "Save post" %>
+				<% end %>
+			</div>
+		</div>
+	</div>	
+</div>
