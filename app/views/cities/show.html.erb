@@ -1,22 +1,26 @@
-<h1>This is the cities/show page!</h1>
+
 <div class="container">
 	<div class="row">
 		<br>
 	</div>
-	<div class="row">
-		<div class="text-center well">
-			<%=  @city.name  %><br>
+	<div class="row text-center">
+		
+			<h2><%= @city.name %></h2>
+			
 				<h2> <%= @city.posts %></h2>
 			<% @posts.each do |post| %>
-		<li>
-			Post: <%= post.content %> <br>
-			Title: <%= post.title %> <br>
-			User:<%= post.user %><br>
-			PostID: <%= post.id %>
+			<div class="text-left  well">
+		
+			
+			 <h3><%= post.title %> </h3>
+			<p>Post: <%= post.content %> </p>
+			written by user <%= link_to post.user, user_path %> PostID: <%= post.id %>
+			
 			<%= button_to "See full article", post, method: :get %>
 			
 
-		</li>
+		
+		</div>
 	<% end %>
 		</div>
 	</div>

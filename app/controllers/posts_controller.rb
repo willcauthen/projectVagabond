@@ -11,12 +11,13 @@ class PostsController < ApplicationController
 	def create
 		posts_params = params.require(:post).permit(:user, :current_city, :content, :title)
 		@post = Post.create(posts_params)
-		redirect_to "/posts"
+		redirect_to "/users/:id/posts"
 	end
 	def edit
 		id = params[:id]
 		@post = Post.find(id)
-		redirect_to "posts"
+		# redirect_to ""
+		render :edit
 	end
 	def update
 		id = params[:id]
@@ -27,14 +28,15 @@ class PostsController < ApplicationController
 	end
 	def show
 		id = params[:id]
-		var = User.find(id) || City.find(id) 
+		var = Post.find(id) || City.find(id) 
 		@post = Post.find(var)
 	end
-	def destory
+	def destroy
 		id = params[:id]
 		@post = Post.find(id)
 		@post.destroy
-		redirect_to cities_path
+		redirect_to(cities_path)
+
 	end
 end
 
