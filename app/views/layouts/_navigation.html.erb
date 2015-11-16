@@ -23,6 +23,7 @@
       <li class="navbar-brand bz"><%= link_to "SIGN UP", '/users/new' %> </li>
       <li class="navbar-brand bz"><%= link_to "LOGIN", sign_in_path %> </li>
       <% else %>
+      <li class="navbar-brand bz"><%= @current_user.user_name %></li>
       <li class="navbar-brand bz"> <%= link_to "LOGOUT", logout_path, method: :delete %> </li>
 
       <% end %>

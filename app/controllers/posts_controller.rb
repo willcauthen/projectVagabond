@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 	def index
+		@current_user = current_user
 		id = params[:id]
 		@city = City.find_by(id)
 		@posts = Post.where(city:@city.name)
@@ -22,9 +23,14 @@ class PostsController < ApplicationController
 		redirect_to city_posts_path
 	end
 	def edit
+		@current_user = current_user
 		id = params[:id]
 		@post = Post.find(id)
-		render :edit
+		if @current_user.id.to_s == @post.user
+			render :edit
+		else
+			redirect_to cities_path
+		end
 	end
 	def update
 		id = params[:id]
@@ -34,7 +40,7 @@ class PostsController < ApplicationController
 		redirect_to city_post_path
 	end
 	def show
-
+		@current_user = current_user
 		id = params[:id] 
 		@post = Post.find(id)
 		@city = City.find_by(name:@post.city)

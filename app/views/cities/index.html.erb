@@ -4,20 +4,17 @@
   </div>
   <div class="row">
   
-<% @cities.each do |city| %>
+  <% @cities.each do |city| %>
   <div>
   <div class="text-center well">
   <h3><%= link_to  city.name, city_path(city.id) %> <br>
   <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
   </h3>
     
-    
-    <% if @current_user %> 
-      <%= button_to "Join", city_users_path(city) %>
-    <% end %>
+  
   </div>
   <br>
-<% end %>
+  <% end %>
 
 
 

@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 	before_action :logged_in?, except: [:index, :show]
 	
 	def index
+		@current_user = current_user
 		@users = User.all
 		render :index
 	end
@@ -18,6 +19,7 @@ class UsersController < ApplicationController
 	end
 	
 	def edit
+		@current_user = current_user
 		id = params[:id]
 		@user = User.find(id)
 		render :edit
@@ -30,6 +32,7 @@ class UsersController < ApplicationController
 		redirect_to @user
 	end
 	def show
+		@current_user = current_user
 		@user = User.find(params[:id])
 		@posts = Post.where(user:@user.id)
 		render :show
