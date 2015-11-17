@@ -5,7 +5,7 @@
 .well {
 	width: 80%;
 	margin-left: 10%;
-	background-color: rgba(125, 232, 227, .9);
+	background-color: rgba(250, 250, 250, .9);
 	border-radius: 20px;
 }
 
@@ -47,22 +47,22 @@ input.focus,
 }
 
 .London{
-	background: #000 url("London.png") center center;
+	background: #000 url("London.png") no-repeat center fixed;
 }
 .SanFrancisco{
-	background: #000 url("SanFrancisco.png") center center;
+	background: #000 url("SanFrancisco.png") no-repeat center fixed;
 }
 .Cleveland{
-	background: #000 url("Cleveland.png") center center;
+	background: #000 url("Cleveland.png") no-repeat center fixed;
 }
 .NewYork{
-	background: #000 url("NewYork.png") center center;
+	background: #000 url("NewYork.png") no-repeat center fixed;
 }
 .Boston{
-	background: #000 url("Boston.png") center center;
+	background: #000 url("Boston.png") no-repeat center fixed;
 }
 .splashpage{
-	background: #000 url("splashpage.png") center center;
+	background: #000 url("splashpage.png") no-repeat center fixed;
 }
 .pageheader{
 	color: white;
