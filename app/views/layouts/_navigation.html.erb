@@ -1,5 +1,5 @@
 
-<div class="jumbotron"><h1>Vagabond</h1></div>
+<div class="jumbotron"><h1><%= link_to'Vagabond', root_path %></h1></div>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
         <div class="navbar-header">
@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-left ">
         <li class="navbar-brand bz"><%= link_to "USERS", users_path %> </li>
       <li class="navbar-brand bz"><%= link_to "CITIES", cities_path %> </li>
-      <li class="navbar-brand bz"><%= link_to "TRAVEL TIPS", "/users/:id/posts" %> </li>
+     
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if !@current_user %>

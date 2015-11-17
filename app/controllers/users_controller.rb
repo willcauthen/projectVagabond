@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
 
-	before_action :logged_in?, except: [:new, :index, :show]
-
-	
+	before_action :logged_in?, except: [:new, :index, :show, :create]
 	def index
 		@current_user = current_user
 		@users = User.all
@@ -13,9 +11,15 @@ class UsersController < ApplicationController
 		render :new
 	end
 	def create	
+		puts "hey lets make a user"
 		user_params = params.require(:user).permit(:user_name, :email, :password, :current_city, :about)
-		@user = User.create(user_params)
-		p @user
+		@user = User.new(user_params)
+		if @user.save
+			puts "hey this is the user"
+			p @user
+		else
+			puts "save failed"
+		end
 		login(@user)
 		redirect_to @user
 	end
