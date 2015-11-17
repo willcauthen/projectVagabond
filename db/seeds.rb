@@ -35,7 +35,6 @@ City.create(name: 'San Francisco, CA',
 			lng: -122.403,
 			CityImg: 'SanFrancisco')
 City.create(name: 'Cleveland, OH',
-
 			lat: 41.506,
 			lng: -81.701,
 			CityImg: 'Cleveland')
@@ -58,43 +57,43 @@ City.create(name: 'London, UK',
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "1",
-			content: 'blah blah blah')
+			content: 'The Golden Gate bridge is not made of gold.  Talk about bait and switch.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "1",
-			content: 'blah blah blah2')
+			content: 'Palace of fine arts is beautiful.  No art though.')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post3',
 			user: "1",
-			content: 'blah blah blah3')
+			content: 'Cousin Bubba was right, the squirrel here is delish')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post1',
 			user: "2",
-			content: 'blah blah blah')
+			content: 'The whole town supports the Browns!!! Everything is covered in brown stuff.')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post2',
 			user: "2",
-			content: 'blah blah blah2')
+			content: "I can't tell if the elementary school doubles for the university, but they both have lovely swings.")
 Post.create(city: 'Cleveland, OH',
 			title: 'Post3',
 			user: "2",
-			content: 'blah blah blah3')
+			content: 'Can you believe there is a Fairmont Hotel in Cleveland???!!!')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post1',
 			user: "3",
-			content: 'blah blah blah')
+			content: 'Did I mention that the Browns play here? I can only say that for another year.')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post2',
 			user: "3",
-			content: 'blah blah blah2')
+			content: 'I did not realize that the Browns had a smell.  Someone needs to flush.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "3",
-			content: 'blah blah blah3')
+			content: 'Sam Wo is everything Conan said it would be, and more!!!')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "4",
-			content: 'blah blah blah')
+			content: 'Try the Jameyster app, best tourguide of SF!!!')
 Post.create(city: 'New York, NY',
 			title: 'Post2',
 			user: "4",
