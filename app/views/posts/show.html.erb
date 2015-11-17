@@ -7,8 +7,10 @@
 written by user <%= link_to @post.user, "/users/#{@post.user}" %> PostID: <%= @post.id %>
 <!-- if user doesn't have permission, these should be deactivated, 
 	once it's working, I mean -->
-	<% if @current_user.id.to_s == @post.user %>
-		<%= button_to "EDIT", "/cities/#{@city.id}/posts/#{@post.id}/edit", method: :get %> <br>
+	<% if @current_user != nil %>
+		<% if @current_user.id.to_s == @post.user %>
+			<%= button_to "EDIT", "/cities/#{@city.id}/posts/#{@post.id}/edit", method: :get %> <br>
+		<% end %>
 	<% end %>
 </div>
 </div>
