@@ -1,9 +1,6 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-	# before_action :logged_in?, only: [:show]
-=======
-	before_action :logged_in?, except: [:index, :show]
->>>>>>> 27ecd2d2f857b8f199f3511387b562a24d2107fa
+	before_action :logged_in?, only: [:show]
+
 	
 	def index
 		@current_user = current_user

@@ -57,11 +57,11 @@ City.create(name: 'London, UK',
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "1",
-			content: 'blah blah blah')
+			content: 'My name is Wilbo, and I am limited to a wheelchair. The BART rail system in San Francisco has good accessibility for those with similar mobility restrictions.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "1",
-			content: 'blah blah blah2')
+			content: 'The building at 225 Bush Street is not only lovely beyond compare, but also has a totally baller assistive listening system available.')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post3',
 			user: "1",
@@ -89,11 +89,11 @@ Post.create(city: 'Cleveland, OH',
 Post.create(city: 'San Francisco, CA',
 			title: 'Post3',
 			user: "3",
-			content: 'blah blah blah3')
+			content: 'The Rusty Nipple, a burlesque show in The Castro, is not very good for the visually impaired. They gave me a hard time about my seeing-eye dog and tried to refuse us entry.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "4",
-			content: 'blah blah blah')
+			content: 'The San Francisco was a great place, my son, who lives with ASD, had a great time looking at the exhibits.')
 Post.create(city: 'New York, NY',
 			title: 'Post2',
 			user: "4",
@@ -113,6 +113,18 @@ Post.create(city: 'New York, NY',
 Post.create(city: 'London, UK',
 			title: 'Post3',
 			user: "5",
-			content: 'I am unique')
+			content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.')
+Post.create(city: 'London, UK',
+			title: 'Post3',
+			user: "2",
+			content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.')
+Post.create(city: 'London, UK',
+			title: 'Post3',
+			user: "1",
+			content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.')
+Post.create(city: 'London, UK',
+			title: 'Post3',
+			user: "5",
+			content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.')
 
 
