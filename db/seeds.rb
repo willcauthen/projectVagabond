@@ -61,12 +61,15 @@ Post.create(city: 'San Francisco, CA',
 Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "1",
-			content: 'The building at 225 Bush Street is not only lovely beyond compare, but also has a totally baller assistive listening system available.')
 			content: 'The Golden Gate bridge is not made of gold.  Talk about bait and switch.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post2',
 			user: "1",
 			content: 'Palace of fine arts is beautiful.  No art though.')
+Post.create(city: 'San Francisco, CA',
+			title: 'Post2',
+			user: "2",
+			content: 'The building at 225 Bush Street is not only lovely beyond compare, but also has a totally baller assistive listening system available.')
 Post.create(city: 'Cleveland, OH',
 			title: 'Post3',
 			user: "1",
@@ -98,8 +101,11 @@ Post.create(city: 'San Francisco, CA',
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "4",
-			content: 'The San Francisco was a great place, my son, who lives with ASD, had a great time looking at the exhibits.')
 			content: 'Sam Wo is everything Conan said it would be, and more!!!')
+Post.create(city: 'San Francisco, CA',
+			title: 'Post1',
+			user: "4",
+			content: 'The San Francisco was a great place, my son, who lives with ASD, had a great time looking at the exhibits.')
 Post.create(city: 'San Francisco, CA',
 			title: 'Post1',
 			user: "4",
