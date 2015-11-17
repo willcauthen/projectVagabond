@@ -14,7 +14,9 @@
 			
 			 <h3><%= post.title %> </h3>
 			<p>Post: <%= post.content %> </p>
-			written by user <%= link_to post.user, "/users/#{post.user}" %> PostID: <%= post.id %>
+			<% var = User.find(post.user) %>
+			Written by <%= link_to var.user_name, "/users/#{post.user}" %><br>
+			PostID: <%= post.id %><br>
 			
 			<%= link_to "See full article", "#{@city.id}/posts/#{post.id}" %>
 			
