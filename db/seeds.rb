@@ -107,19 +107,19 @@ Post.create(city: 'San Francisco, CA',
 Post.create(city: 'New York, NY',
 			title: 'Post2',
 			user: "4",
-			content: 'There are no more options')
+			content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.')
 Post.create(city: 'New York, NY',
 			title: 'Post3',
 			user: "4",
-			content: 'I am special')
+			content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.')
 Post.create(city: 'New York, NY',
 			title: 'Post1',
 			user: "5",
-			content: 'I am one of a kind')
+			content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.')
 Post.create(city: 'New York, NY',
 			title: 'Post2',
 			user: "5",
-			content: 'I am a snowflake')
+			content: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.')
 Post.create(city: 'London, UK',
 			title: 'Post3',
 			user: "5",
