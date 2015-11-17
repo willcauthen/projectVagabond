@@ -12,15 +12,13 @@ class PostsController < ApplicationController
 		render :new
 	end
 	def create
-		id = params[:city_id]
-		city = City.find(id)
+		id = params[:id]
 		user = current_user
-		posts_params = params.require(:post).permit(:content, :title)
+		posts_params = params.require(:post).permit(:city, :content, :title)
 		@post = Post.new(posts_params)
 		@post.user = user.id
-		@post.city = city.name
 		@post.save
-		redirect_to city_posts_path
+		redirect_to user
 	end
 	def edit
 		@current_user = current_user

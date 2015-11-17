@@ -6,7 +6,10 @@
 <hr>
 <p><%= @post.content %> </p>
 <% var = User.find(@post.user) %>
-written by <%= link_to var.user_name, "/users/#{@post.user}" %> PostID: <%= @post.id %>
+written by <%= link_to var.user_name, "/users/#{@post.user}" %><br>
+City: <%= link_to @city.name, "/cities/#{@city.id}" %><br>
+PostID: <%= @post.id %><br>
+
 <!-- if user doesn't have permission, these should be deactivated, 
 	once it's working, I mean -->
 	<% if @current_user != nil %>

@@ -17,7 +17,11 @@
             <ul class="nav navbar-nav navbar-left ">
         <li class="navbar-brand bz"><%= link_to "USERS", users_path %> </li>
       <li class="navbar-brand bz"><%= link_to "CITIES", cities_path %> </li>
-     
+
+      <% if @current_user %>
+        <li class="navbar-brand bz"><%= link_to "NEW POST", "/users/#{@current_user.id}/posts/new" %> </li>
+      <% end %>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if !@current_user %>
