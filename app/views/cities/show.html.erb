@@ -10,6 +10,9 @@
 
 			
 				<h2> <%= @city.posts %></h2>
+			<% if @posts.size == 0 %>
+				<span class="pageheader">No Posts yet!</span>
+			<% else %>	
 			<% @posts.each do |post| %>
 			<div class="text-left  well">
 		
@@ -25,6 +28,7 @@
 
 		
 		</div>
+	<% end %>
 	<% end %>
 		</div>
 	</div>

@@ -1,7 +1,5 @@
 <div class="container">
-  <div class="row">
-    <br>
-  </div>
+  
   <div class="row">
   <div>
 
@@ -10,13 +8,11 @@
   <div>
 
   <div class="text-center cityscape <%=city.CityImg %>">
-   
+    <br><br> <br><br> <br><br>
+   <h1 class="big"><%= link_to  city.name, city_path(city.id) %></h1>
   <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
 
-  <h3><%= link_to  city.name, city_path(city.id) %></h3>
-
   </div>
-  <br>
   <% end %>
 
 

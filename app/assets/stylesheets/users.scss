@@ -5,8 +5,9 @@
 .well {
 	width: 90%;
 	margin-left: 5%;
-	background-color: rgba(250, 250, 250, .9);
+	background-color: rgba(0,0,0, .8);
 	border-radius: 10px;
+	color: #fff;
 }
 
 img {
@@ -30,12 +31,14 @@ img {
 
 input,
 #post_content,
-#user_about{
+#user_about,
+#post-city{
 	padding: 7px;
 	border: solid 5px #c9c9c9;
 	transition: border 0.3s;
 	background: #CCFFFF;
 	margin: 2px;
+	color: black;
 }
 
 input:focus,
@@ -67,10 +70,11 @@ input.focus,
 }
 .pageheader{
 	color: white;
+	font-size: 4em;
 }
 
 a:visited{
-	color: #4d4dff;
+	color: yellow;
 }
 a:hover{
 	text-decoration: none;
@@ -84,4 +88,11 @@ a:active{
 .cityscape {
 	width: 100%;
 	height: 500px;
+	border: 5px white;
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+.big{
+
+	font-size: 5em;
 }
