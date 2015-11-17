@@ -68,17 +68,20 @@ input.focus,
 .pageheader{
 	color: white;
 }
-a:link{
-	color: white;
-}
+
 a:visited{
-	color: #CCFFFF;
+	color: #4d4dff;
 }
 a:hover{
 	text-decoration: none;
-	color: #affec4;
+	color: #CCFFFF;
 }
 a:active{
 	color: #6dddbc;
 	;
+}
+
+.cityscape {
+	width: 100%;
+	height: 500px;
 }
