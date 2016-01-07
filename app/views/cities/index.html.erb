@@ -7,7 +7,7 @@
 
   <div>
 
-  <div class="text-center cityscape <%=city.CityImg %>">
+  <div class="text-center cityscape <%= city.CityImg.png %>">
     <br><br> <br>
    <h1 class="big"><%= link_to  city.name, city_path(city.id) %></h1>
   <%= draw_map_of Location.new(city.name, city.lat, city.lng) %>
