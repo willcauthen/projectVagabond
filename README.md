@@ -1,6 +1,7 @@
-#Group 1
+#Vagabond
 
-Client: Brianna
+App designed for users with disabilities in mind.
+
 
 Laura - https://github.com/laulaucia
 
